@@ -32,7 +32,7 @@ public class FuncionalidadesTeatroMoro {
             System.out.println("4. Eliminar entrada");
             System.out.println("5. Ver todas las entradas vendidas");
             System.out.println("6. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.print("\nSeleccione una opción: ");
 
             int opcion = scanner.nextInt();
             scanner.nextLine();
@@ -79,7 +79,7 @@ public class FuncionalidadesTeatroMoro {
                 precioBase = 20000;
                 break;
             } else {
-                System.out.println("Ubicación no válida. Intente nuevamente.");
+                System.out.println("Error: Ubicación no válida. Intente nuevamente.");
             }
         }
 
@@ -95,7 +95,7 @@ public class FuncionalidadesTeatroMoro {
                 descuento = precioBase * 0.15;
                 break;
             } else {
-                System.out.println("Tipo no válido. Intente nuevamente.");
+                System.out.println("Error: Tipo no válido. Intente nuevamente.");
             }
         }
 
@@ -141,7 +141,7 @@ public class FuncionalidadesTeatroMoro {
         }
 
         if (!encontrada) {
-            System.out.println("No se encontraron entradas con ese criterio.");
+            System.out.println("Error: No se encontraron entradas con ese criterio.");
         }
     }
 
@@ -164,7 +164,7 @@ public class FuncionalidadesTeatroMoro {
                 return;
             }
         }
-        System.out.println("No se encontró una entrada con ese número.");
+        System.out.println("Error: No se encontró una entrada con ese número.");
     }
 
     private static void mostrarEntrada(int i) {
